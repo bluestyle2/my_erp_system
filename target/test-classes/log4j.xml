@@ -11,30 +11,25 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.spring.myapp">
-		<level value="info" />
+	<logger name="first" additivity="false">
+		<level value="debug" />
+		<appender-ref ref="console"/>
 	</logger>
 	
-	<!-- 3rdparty Loggers -->
-	<logger name="org.springframework.core">
-		<level value="info" />
-	</logger>	
-	
-	<logger name="org.springframework.beans">
-		<level value="info" />
-	</logger>
-	
-	<logger name="org.springframework.context">
-		<level value="info" />
-	</logger>
-
-	<logger name="org.springframework.web">
-		<level value="info" />
-	</logger>
+	<!-- Query Loggers -->
+	<logger name="jdbc.sqlonly" additivity="false">  
+    	<level value="INFO"/>  
+        <appender-ref ref="console-infolog"/>  
+    </logger>
+    
+    <logger name="jdbc.resultsettable" additivity="false">  
+    	<level value="INFO"/>  
+        <appender-ref ref="console"/>  
+    </logger>  
 
 	<!-- Root Logger -->
 	<root>
-		<priority value="info" />
+		<priority value="off"/>
 		<appender-ref ref="console" />
 	</root>
 	
