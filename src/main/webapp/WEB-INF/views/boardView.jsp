@@ -2,6 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <html>
+<%@ include file="leftMenu.jsp" %>
     <head>
         <title>게시판</title>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>

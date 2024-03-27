@@ -6,7 +6,9 @@
 <link href="../../resources/css/theme01.css" rel="stylesheet"/>
 <script>
 $(document).ready(function(){
-	
+	$("#tree").fancytree({
+        // Fancytree 설정 옵션
+    });
 	$("#login").click(function(){
 		//로그인부분 게시판과 연동하기
 		var objParams = {
@@ -58,5 +60,7 @@ $(document).ready(function(){
 		   			<input type="button" id="findIdPw" name="findIdPw" value="아이디/비밀번호찾기"/>
 		   			</div>
 	   			</div>
-		</body>
+		
+		
+		
 </html>

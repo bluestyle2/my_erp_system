@@ -3,9 +3,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ page session="false" %>
 <html>
+<%@ include file="leftMenu.jsp" %>
     <head>
         <title>게시판</title>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="../../resources/css/theme01.css" rel="stylesheet"/>
         <script type="text/javascript">
             $(document).ready(function(){
             	
@@ -99,7 +102,7 @@
     	<form class="form-inline" id="frmSearch" action="/board/list">
 	    	<input type="hidden" id="startPage" name="startPage" value=""><!-- 페이징을 위한 hidden타입 추가 -->
 	        <input type="hidden" id="visiblePages" name="visiblePages" value=""><!-- 페이징을 위한 hidden타입 추가 -->
-	    	<div align="center">
+	    	<div class="offset-md-1" align="center">
 	    		<table width="1200px">
 	    			<tr>
 	    				<td align="right">
