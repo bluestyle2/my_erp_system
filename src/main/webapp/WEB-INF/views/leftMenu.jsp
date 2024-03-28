@@ -39,6 +39,7 @@ body {
   width: 100px;
   background-color: black;
   transition: .5s;
+  z-index : 1;
 }
 
 .side-bar ul > li > a {
@@ -149,7 +150,7 @@ body {
       </a>
       <ul>
         <li><a href="#">사용자 관리</a></li>
-        <li><a href="#">부서 관리</a></li>
+        <li><a href="/groupAdd">부서 관리</a></li>
         <li><a href="#">batch Job 관리</a></li>
       </ul>
     </li>
